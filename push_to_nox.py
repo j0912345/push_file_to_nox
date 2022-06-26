@@ -1,4 +1,5 @@
 # made by j0/!j0.
+# this file is Licensed under the GNU General Public License v3.0
 
 def push(local_file, emu_file_dest, nox_install_location, emu_name="NoxPlayer"):
     #nox_install_location needs a "/" or '\" at the end (ie: "C:\users\x\nox\")
