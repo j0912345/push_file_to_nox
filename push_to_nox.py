@@ -7,5 +7,6 @@ def push(local_file, emu_file_dest, nox_install_location, emu_name="NoxPlayer"):
     #   emu_file_dest: the destation folder on the emulator
     #   emu_name: the name of the emulator that you want to modifiy. check nox Multi-Drive for the exact name
     from subprocess import run as runcmd
+    runcmd(f'{nox_install_location}noxconsole launch -name:{emu_name}', shell=True)
     runcmd(f'{nox_install_location}noxconsole adb -name:{emu_name} -command:"push {local_file} {emu_file_dest}"', shell=True)
 
